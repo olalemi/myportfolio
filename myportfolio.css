@@ -12,13 +12,12 @@ body{
 }
 
  .img_1{
+     
      border-radius:100px;
      max-width: 100px;
      max-height: 100px;
-     margin-left:300px;
-     margin-top:110px;
-     margin-right:auto;
-
+     
+    
  }
  
   .flex_item {
@@ -28,37 +27,33 @@ body{
     text-rendering: optimizeLegibility;
     text-decoration: none;
     padding-right:50px;
-    outline:0px;
     letter-spacing:1px;
-  }
+  } 
 
   .flex_item:hover{
-     color: #4147B2;
+     color: #4b6cc1;
 }
   .text_box {
       background:#F1F8FA;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-items: center;
       align-items: flex-start;
       width: 1000px;
       height: 330px;
       margin: auto;
-      margin-top:120px;
+      margin-top: 80px;
       border-radius: 5px;
   }
 
   .navbar {
-      position:fixed;
       top:8rem;
-      max-width:70%;
-      height:1%;
-      display:flex;
-      justify-content:space-around;
-      align-items:right;
+      max-width:100%;
       list-style-type: none;
-      margin-left:450px;
-      margin-top:50px;
+      margin-top:40px;
+      
+     
   }
 
   .Welcome_text {
@@ -84,26 +79,43 @@ body{
     text-decoration: none;
 } 
 
-.Logo{
+
+.Logo {
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size:1.6rem;
     color: #191a1d;
-    margin-left:450px;
-      
+    margin-top: -1px;
+
+ 
 }
 
 .Logo:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin-left: 450px ; /* This will center the border. */
-    max-width: 70px; /* Change this to whatever width you want. */
-    border-bottom: 10px solid #4b6cc1; /* This creates the border. Replace black with whatever color you want. */
+    content: "";                
+    display: block;                    
+    max-width: 70px;                   
+    border-bottom: 10px solid #4b6cc1;   
     border-radius: 1000px;
-    margin-top:7px; 
+    margin-top: 5px;
+    
 }
 
 .Home_nav {
-    margin-top:-100px;  
+    margin-top:-85px; 
+    display:flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0px;
+    margin-left: 50px;
+  
+}
+
+.main{
+  display:flex;
+  justify-content: center;
+  margin-top:100px;
+  margin-right: 250px;
+
 }
 
 .social{
@@ -116,7 +128,7 @@ body{
     margin-top: -160px;
   }
   
-  .social a{
+  .social a {
     color: #fff;
     background: #c3dbe2;
     font-size: 25px;
@@ -152,87 +164,4 @@ body{
   .social a:nth-child(4) i{
     color: #1DA0F0;
   }
-
-
-@media screen and (min-width:1626px){
-
-    header{
-        width:50vw;
-    }
-
-}
-
-@media screen and (max-width:1257px){
-
-    .text_box {
-        width: 50vw;
-        height: 330px;
-        margin: auto;
-        margin-top:80px;
-        border-radius: 5px;
-    }
-
-    .img_1{
-        border-radius:100px;
-        max-width: 100px;
-        max-height: 100px;
-        margin-left:250px;
-        margin-top:110px;
-        margin-right:auto;
-   
-    }
-
-    .navbar {
-        position:fixed;
-        top:8rem;
-        max-width:70%;
-        height:1%;
-        display:flex;
-        justify-content:space-around;
-        align-items:right;
-        list-style-type: none;
-        margin-left:300px;
-        margin-top:150px;
-    }
-
-    
-    .Home_nav {
-        margin-left:-50px; 
-        margin-top:10px;
-    }
-   
-     
-    .Logo{
-        margin-left:300px;
-        
-    }
-
-    .Logo:after {
-        margin-left: 300px ; /* This will center the border. */
-        max-width: 70px; /* Change this to whatever width you want. */
-        margin-top:7px; 
-    }
-    .about_status_1,.about_status_2{
-        line-height:2;
-    }
-}
-
-@media screen and (max-width:650px){
-    
-    .text_box {
-        width: 50vw;
-        height: 330px;
-        margin: auto;
-        margin-top:80px;
-        border-radius: 5px;
-    }
-
-
-}
-
-@media screen and (max-width:300px){
-
-
-    
-}
 
