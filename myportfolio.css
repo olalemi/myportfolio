@@ -41,7 +41,7 @@ body{
       justify-items: center;
       align-items: flex-start;
       width: 1000px;
-      height: 330px;
+      height: 400px;
       margin: auto;
       margin-top: 80px;
       border-radius: 5px;
@@ -51,7 +51,7 @@ body{
       top:8rem;
       max-width:100%;
       list-style-type: none;
-      margin-top:40px;
+      margin-top:30px;
       
      
   }
@@ -62,20 +62,21 @@ body{
     margin-left: 45px;
     
   }
-  .about_status_1,.about_status_2{
+  .text{
     font-weight: 100;
-    font-size: 23px;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-top: 10px;
     margin-left: 45px;
     justify-content:left;
-    line-height:1.2rem;
+    line-height:175%;
+    padding-right: 50px;
+    text-decoration: none;
   }
-
   .about_status_2 {
-      margin-top: 50px;
+      margin-top: 30px;
   }
 
- .btn, .Logo {
+ .btn, .Logo,.about_status_1 {
     text-decoration: none;
 } 
 
@@ -100,11 +101,7 @@ body{
 }
 
 .Home_nav {
-    margin-top:-85px; 
-    display:flex; 
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top:-85px;
     margin:0px;
     margin-left: 50px;
   
@@ -165,3 +162,49 @@ body{
     color: #1DA0F0;
   }
 
+      @media only screen and (max-width: 900px) {
+
+
+                .main{
+                  display:flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  margin-top:100px;
+                  margin-left: 250px;
+                
+                }
+                
+                  .Home_nav {
+                    margin-top:100px;
+                    margin:0px;
+                    margin-top: 35px;
+
+                  }
+
+                  .navbar {
+                    display:flex;
+                    flex-wrap: wrap;
+                    max-width:100%;
+                    list-style-type: none;
+                    margin-top:30px;  
+                }
+
+                .text_box  {
+                  background:#440723;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items:left;
+                  width: 60vw;
+                  height: 400px;
+                  margin-right: auto;
+                  margin-left: 230px;
+                  margin-top: 50px;
+                  border-radius: 5px;
+                  
+                }
+                  
+              .social{
+                display:none;
+              } 
+
+      }
